@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b66bb0acb8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/lo.png" class="logo">
+            <ul id ="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Learnings</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hello! I am <span>Vinith</span> <br> Welcome to my portfolio<br>
+<p class="p11">
+    Software Engineer | Stony Brook University Graduate | CVS Health | Frontier Communications | Infosys Limited | Numer8 Analytics<br>
+    INSTA Award of Excellence Winner (Cloud, Infrastructure, and Database Management) | Agile Certified | Full-Stack Developer | Chess Player <i class="fa-solid fa-chess"></i>
+</p>
+</h1>
+
+        </div>
+    </div>
+       
+
+</div>
+<!--- --------about----------- -->
+<div id="about">
+    <div class="container">
+        <div class = "row">
+            <div class="about-col-1">
+            <img src="images/img12.png">
+        </div>
+            <div class="about-col-2">
+                <h1 class="subtitle ">About Me</h1>
+                <p>This is vinith kumar and this is my about section</p>
+
+                <div class="tabtitles">
+                    <p class="tablinks activelink" onclick="opentab('skills')">skills</p>
+                    <p class="tablinks" onclick="opentab('Experience')">Experience</p>
+                    <p class="tablinks"onclick="opentab('Education')">Education</p>
+                    <p class="tablinks"onclick="opentab('Internships')">Internships</p>
+                </div>
+                <div class="tabcontents activetab" id="skills">
+<ul>
+    <li><span>Programming Languages:</span><br>JavaScript, TypeScript, Python, Go, Java, Bash.</li>
+    <li><span>Web Frameworks & Technologies:</span><br>Node.js, Express.js, Next.js, Cucumber.js, Sequelize.js, React.js, Angular, HTML5, CSS, Bootstrap, jQuery.</li>
+    <li><span>Testing Tools:</span><br>Cyara, Postman CLI, Newman, Jest, Cypress, Jasmine, Karma, Selenium WebDriver, Mocha, Junit.</li>
+    <li><span>Node Modules:</span><br>Async, Express, Gulp, Request, Lodash, Browserify, PM2, Grunt, Passport, Karma, MySQL, React.</li>
+    <li><span>Cloud Platforms:</span><br>AWS (EKS, ECR, CloudFormation), Azure, OpenText Cloud.</li>
+    <li><span>Containerization & Orchestration:</span><br>Docker, Kubernetes, OpenShift.</li>
+    <li><span>CI/CD & Release Management:</span><br>Harness, GitHub Actions, Bitbucket Pipelines, SonarQube, Fortify, npm.</li>
+    <li><span>Infrastructure as Code (IaC) & Automation:</span><br>Terraform, Ansible, PowerShell.</li>
+    <li><span>Monitoring & Logging:</span><br>Datadog, Grafana, Chaos Search, Splunk, Big Panda, PagerDuty, Application Performance Monitoring (APM).</li>
+    <li><span>Databases & Artifact Management:</span><br>MySQL, PostgreSQL, Redis, MongoDB, Oracle 12c/19c, Nexus.</li>
+    <li><span>Incident & Performance Management:</span><br>ServiceNow, PagerDuty, Jira, Confluence, Chaos Engineering, Capacity Planning, Incident Management.</li>
+    <li><span>Operating Systems:</span><br>Linux (Red Hat, Ubuntu), Windows.</li>
+    <li><span>Message Brokers & Streaming Platforms:</span><br>Apache Kafka, RabbitMQ.</li>
+    <li><span>Soft Skills:</span><br>Problem-Solving, Team Collaboration, Communication.</li>
+</ul>
+
+                </div>
+
+          <div class="tabcontents" id="Experience">
+    <ul>
+                    <li><span>January 2024 – Present</span><br>Senior Software Engineer<br>CVS Health, Woonsocket, RI | <em>TypeScript,Node.js,Express.js,Cucumber.js,AWS, React.js</em>
+                <p class="p12">
+                    • Designed and developed Spring Boot-based microservices integrated with React.js SPAs.<br>
+                    • Automated CI/CD pipelines with Jenkins and GitLab, deploying to AWS EKS.<br>
+                    • Improved API response times by 20% with optimized asynchronous operations and Hibernate caching.<br>
+                    • Ensured HIPAA compliance with secure authentication using Passport.js and JWT.<br>
+                </p>
+            </li>
+            
+            <li><span>January 2023 – December 2023</span><br>Senior Software Engineer<br>Frontier Communications, Dallas, TX | <em> Node.js,TypeScript,AWS,React.js</em>
+                <p class="p12">
+                    • Designed REST APIs using Java Spring Boot for customer data management.<br>
+                    • Integrated Apache Kafka for real-time event-driven data streaming.<br>
+                    • Automated deployment pipelines with Jenkins, Maven, and Chef.<br>
+                    • Developed responsive SPAs using React.js and Tailwind CSS.<br>
+                </p>
+            </li>
+            
+            <li><span>June 2021 – July 2022</span><br>Senior Software Engineer<br>Infosys Limited, Hyderabad, India | <em>Node.js, OpenText Documentum</em>
+                <p class="p12">
+                    • Built and deployed a modular Document Management System using Node.js and Docker.<br>
+                    • Integrated OpenText Documentum with AWS S3 for scalable document storage.<br>
+                    • Deployed microservices to AWS EKS, achieving 99.9% uptime.<br>
+                    • Automated deployment and rollback strategies with Harness pipelines.<br>
+                </p>
+            </li>
+            
+            <li><span>December 2019 – May 2021</span><br>Software Engineer<br>Infosys Limited, Hyderabad, India | <em>OpenText Documentum, Python, Flask</em>
+                <p class="p12">
+                    • Utilized OpenText Cloud API Documentum for managing 64+ repositories.<br>
+                    • Automated job scheduling with Python scripts, reducing manual intervention by 70%.<br>
+                    • Coordinated upgrades from OpenText Documentum 7.2 to 14.6.<br>
+                    • Developed RESTful APIs using Flask, improving integration with front-end systems.<br>
+                </p>
+            </li>
+            
+            <li><span>August 2018 – November 2019</span><br>Software Engineer<br>Numer8 Analytics Pvt Ltd, Mumbai, India | <em>Node.js, Elasticsearch, Docker</em>
+                <p class="p12">
+                    • Designed and developed intelligent chatbots for Telegram and Viber, automating customer interactions.<br>
+                    • Integrated Elasticsearch with Kibana for interactive dashboards and insights.<br>
+                    • Built and deployed containerized microservices with Docker.<br>
+                    • Developed high-volume PL/SQL stored procedures for optimized database operations.<br>
+                </p>
+            </li>
+      
+    </ul>
+</div>
+
+                <div class="tabcontents"id="Education">
+                    <ul>
+                        <li><span>August 2022 –May 2024</span><br>Master of Science in Computer Engineering <br>Stony Brook University, GPA: 3.75/4.00 <br><p class="p12">Teaching Assistant for ESE 344: Software Techniques for Engineers<br>
+                            CSE 521:Data mining, ESE 534: Learning systems (Machine learning)<br>                                                
+                            ESE 551: Computation Models (DSA in Java), AMS 562: Simulation of C++<br>
+                            </p></li>
+                        <li><span>June 2014 – June 2018</span><br>Bachelor of Engineering in Electronics and Communication Engineering <br> Osmania University, GPA: 3.83/4.00</li>
+                        
+                    </ul>
+                </div>
+                <div class="tabcontents"id="Internships">
+                    <ul>
+                        <li><span> May 2018-June 2018</span><br>Defense Research Development Organization, Hyderabad, India.<br> <p class="p12">Worked on test missile trajectory design and monitoring in the labs "GNU compatible C & C++ Compiler
+                            Assembler, Linker, and other Binary Utilities" and "For x86 platform: Hardened Linux / Hardened Windows."
+                           </p> </li>
+
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!--projects-->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">Web Applications</h1>
+            <div class="projectslist">
+                <div class="project-card" onclick="location.href='https://github.com/Vinith1397/vinith_notes_app';">
+                    <div class="project-image" style="background-image: url('images/bc1.jpeg');"></div>
+                    <h2>Vi_Notepad_Application</h2>
+                    <p>AWS Ec2, PHP, HTML, CSS, XAMPP, MySQL, GitHub, Visual Studio, Ec2</p>
+                    <p>• Developed a Notepad website to allow users to create, view, edit, and delete notes, hosted using AWS EC2.</p>
+                </div>
+                <div class="project-card" onclick="location.href='https://vinith1397.github.io/reposito/';">
+                    <div class="project-image" style="background-image: url('images/bc2.jpeg');"></div>
+                    <h2>NFT_Marketplace_WebPage</h2>
+                    <p>React.js, SCSS, JavaScript (Es6+), JSON, GitHub, Visual Studio, HTML</p>
+                    <p>• Implemented an NFT marketplace web application using React.js and launched it on GitHub Pages.</p>
+                </div>
+                <div class="project-card" onclick="location.href='https://vinith1397.github.io/VinithTravels/index.html';">
+                    <div class="project-image" style="background-image: url('images/bc3.jpeg');"></div>
+                    <h2>Vinith_Travel_WebPage</h2>
+                    <p>HTML, CSS, JavaScript, JSON, Git, Visual Studio</p>
+                    <p>• Designed a website for booking travel bookings, with GitHub built and deployed by asynchronous fetching of JSON data.</p>
+                </div>
+                <div class="project-card" onclick="location.href='https://vinithkumar.pythonanywhere.com/';">
+                    <div class="project-image" style="background-image: url('images/bc4.jpeg');"></div>
+                    <h2>Vinith_Blogs</h2>
+                    <p>Microsoft Azure, Django, Python, HTML, CSS, GitHub, Visual Studio</p>
+                    <p>• Engineered a Website by Django Web framework with boots watch UI and made it online using PythonAnywhere.</p>
+                </div>
+                <div class="project-card" onclick="location.href='https://book-review-app-467a5a193d3e.herokuapp.com/';">
+                    <div class="project-image" style="background-image: url('images/bc5.jpeg');"></div>
+                    <h2>Book_review_System</h2>
+                    <p>React, Node.js, Express.js, Postman, JavaScript, HTML, CSS, GitHub, Heroku</p>
+                    <p>• Developed a website using Heroku to review books with React (frontend) and Express/node.js (backend).</p>
+                </div>
+                <div class="project-card" onclick="location.href='https://vinith1397.github.io/Vinith_Visual_Theatere/';">
+                    <div class="project-image" style="background-image: url('images/bc6.jpeg');"></div>
+                    <h2>Vinith_Visual_Booking_System</h2>
+                    <p>HTML, CSS, JavaScript, GitHub, Visual Studio</p>
+                    <p>• Constructed a static website to store book seats for Vinith Visual Theater and deployed using GitHub Static build and deploy.</p>
+                </div>
+                <div class="project-card" onclick="location.href='http://vinithkumar-pasula.s3-website.us-east-2.amazonaws.com/';">
+                    <div class="project-image" style="background-image: url('images/your-image7.jpg');"></div>
+                    <h2>My_Personal_Website</h2>
+                    <p>Amazon S3, AWS DynamoDB, HTML, CSS, JavaScript, GitHub, Visual Studio</p>
+                    <p>• Built a website about me using JavaScript, HTML, AWS S3, and DynamoDB database to store the contacts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-------portfolio------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle ">Self Projects</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="images/img21.png">
+                <div class="layer">
+                    <h3><br><br>Portfolio Creation</h3>
+                    <p>Html,css,java script,VSO,github</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/image12.jpg">
+                <div class="layer">
+                    <h3>Optimal Decision tree DL8 </h3>
+                    <p>
+                        Python, Pycharm ,Jupyter<p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/image13.png">
+                <div class="layer">
+                    <h3>Deploy A Classification Model Using Azure DevOps</h3>
+                    <p>
+                        Microsoft Azure DevOps, Weka,Python <p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle" >Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>pasulavinithkumar@gmail.com</p>
+                <p><i class="fa-solid fa-phone-square-alt"></i>+1 3472095128</p>
+                <div class="socialicons" >
+                    <a href="https://www.linkedin.com/in/vinith-kumar-pasula/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Vinith1397"><i class="fa-brands fa-github"></i></a>
+                    <a href="pasulavinithkumar@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <a href="images/VinithPasula_softw" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name = "Message" rows="6" placeholder="Your Message"></textarea>
+                     <button type="submit" class="btn btn2">Submit</button>   
+                  
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="p11">Copyright @ Vinith © Portfolio from the scrath
+
+        </p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tablinks");
+    var tabcontents = document.getElementsByClassName("tabcontents");
+    function opentab(tabname){
+        for(tablink of  tablinks){
+            tablink.classList.remove("activelink");
+        }
+        for(tabcontent of  tabcontents){
+            tabcontent.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelink");
+        document.getElementById(tabname).classList.add("activetab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwmbjAt481Fav7zElPZrAAOiKjaSxcTzvpG1298fkmTWUpK9hYxWOZqVz1a5iUY-uBi/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Form submitted successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    })
+  </script>
+</body>
+</html>
